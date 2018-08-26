@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btnMixture"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="开始合成"
+            android:layout_weight="1"
+            android:onClick="startSpeak"/>
+        <Button
+            android:id="@+id/btnStop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="停止合成"
+            android:layout_weight="1"
+            android:onClick="stopSpeak"/>
+        <Button
+            android:id="@+id/btnTest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="批量测试"
+            android:layout_weight="1"
+            android:onClick="startSpeak"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="当前合成状态:"
+        android:textSize="18sp"
+        />
+    <TextView
+        android:id="@+id/tv_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <EditText
+        android:id="@+id/txtSynth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="图灵机器人是中文语境下智能度最高的机器人大脑"/>
+
+</LinearLayout>
