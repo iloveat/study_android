@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.turing.ttsdemo.MainActivity">
+
+    <EditText
+        android:id="@+id/txtSynth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint=""
+        android:layout_alignParentTop="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btnOffline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="离线合成"
+                android:layout_weight="1"
+                android:onClick="onViewClick"/>
+            <Button
+                android:id="@+id/btnStop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="停止合成"
+                android:layout_weight="1"
+                android:onClick="onViewClick"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btnLoad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="导入文本"
+                android:layout_weight="1"
+                android:onClick="onViewClick"/>
+            <Button
+                android:id="@+id/btnReplay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="播放"
+                android:layout_weight="1"
+                android:onClick="onViewClick"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.widget.RelativeLayout>
